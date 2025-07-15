@@ -97,16 +97,14 @@ const PortfolioEmp = (props: PortfolioEmpProps) => {
             {subtitle && (
               <div>
                 <h3 className="text-justify font-semibold mb-1">{subtitle}</h3>
-                {data.subDescription
-                  ?.split("/")
-                  .map(
-                    (desc, index) =>
-                      desc.trim() && (
-                        <p className="text-justify text-white-600">
-                          {desc.trim()}
-                        </p>
-                      )
-                  )}
+                {data.subDescription?.split("/").map(
+                  (desc, index) =>
+                    desc.trim() && (
+                      <p key={index} className="text-justify text-white-600">
+                        {desc.trim()}
+                      </p>
+                    )
+                )}
               </div>
             )}
           </div>
