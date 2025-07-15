@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 const CircleImage = () => {
   return (
     <div className=" bottom-0 right-0 hidden md:inline-block md:absolute">
-      <img
+      <Image
         src="/pc.png"
         width={260}
         height={260}
